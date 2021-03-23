@@ -18,15 +18,6 @@ public class DiyRequestInterceptorConfig implements RequestInterceptor {
     private static final Logger log = LoggerFactory.getLogger(DiyRequestInterceptorConfig.class);
 
     private final String AUTHORIZATION_HEADER = "Authorization";
-    @Value("${gateway.url}")
-    private String url;
-
-
-    @Value("${security.oauth2.client.client-id}")
-    private String clientId;
-
-    @Value("${security.oauth2.client.client-secret}")
-    private String clientSecret;
 
     @Override
     public void apply(RequestTemplate requestTemplate) {

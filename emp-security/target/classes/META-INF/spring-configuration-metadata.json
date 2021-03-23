@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "name": "gaoxinqimeng.security",
+      "type": "com.yzg.study.security.properties.NacosConfigSecurityProperties",
+      "sourceType": "com.yzg.study.security.properties.NacosConfigSecurityProperties"
+    },
+    {
+      "name": "ignore",
+      "type": "com.yzg.study.security.properties.FilterIgnoreProperties",
+      "sourceType": "com.yzg.study.security.properties.FilterIgnoreProperties"
+    },
+    {
+      "name": "security.oauth2.client",
+      "type": "com.yzg.study.security.properties.SecurityOAuth2ClientProperties",
+      "sourceType": "com.yzg.study.security.properties.SecurityOAuth2ClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gaoxinqimeng.security.oauth2",
+      "type": "com.yzg.study.security.properties.OAuth2Properties",
+      "sourceType": "com.yzg.study.security.properties.NacosConfigSecurityProperties"
+    },
+    {
+      "name": "gaoxinqimeng.security.web",
+      "type": "com.yzg.study.security.properties.WebProperties",
+      "sourceType": "com.yzg.study.security.properties.NacosConfigSecurityProperties"
+    },
+    {
+      "name": "ignore.clients",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.yzg.study.security.properties.FilterIgnoreProperties"
+    },
+    {
+      "name": "ignore.swagger-providers",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.yzg.study.security.properties.FilterIgnoreProperties"
+    },
+    {
+      "name": "ignore.urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.yzg.study.security.properties.FilterIgnoreProperties"
+    },
+    {
+      "name": "security.oauth2.client.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.yzg.study.security.properties.SecurityOAuth2ClientProperties"
+    },
+    {
+      "name": "security.oauth2.client.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.yzg.study.security.properties.SecurityOAuth2ClientProperties"
+    }
+  ],
+  "hints": []
+}

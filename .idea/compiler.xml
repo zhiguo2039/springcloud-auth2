@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="emp-api" />
-        <module name="emp-common" />
-        <module name="emp-auth2" />
         <module name="emp-mesh-service" />
+        <module name="emp-auth2" />
         <module name="emp-security" />
         <module name="emp-gateway" />
+        <module name="emp-common" />
         <module name="emp-log" />
       </profile>
     </annotationProcessing>
