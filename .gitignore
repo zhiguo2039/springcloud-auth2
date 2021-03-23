@@ -2,3 +2,6 @@
 /emp-mesh-service/target
 /emp-common/target
 /out
+/emp-api/target
+/emp-auth2/target
+/emp-security/target
