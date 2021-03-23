@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.2.7.RELEASE</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>com.yzg.study</groupId>
+  <artifactId>springcloud-auth2</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>emp-common</module>
+    <module>emp-gateway</module>
+    <module>emp-gateway</module>
+    <module>emp-log</module>
+    <module>emp-auth2</module>
+    <module>emp-security</module>
+    <module>emp-mesh-service</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
+    <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-security.version>5.1.6.RELEASE</spring-security.version>
+    <mybatis-plus-boot-starter.version>3.3.1</mybatis-plus-boot-starter.version>
+    <fastjson.version>1.2.68</fastjson.version>
+    <mybatis-plus.version>3.3.1</mybatis-plus.version>
+    <druid.version>1.1.22</druid.version>
+    <commons-lang3.version>3.9</commons-lang3.version>
+    <security-jwt.version>1.0.10.RELEASE</security-jwt.version>
+    <jjwt.version>0.9.1</jjwt.version>
+    <springfox.version>2.9.2</springfox.version>
+    <knife4j.version>2.0.2</knife4j.version>
+    <json.version>20180813</json.version>
+    <commons-pool2.version>2.7.0</commons-pool2.version>
+    <aliyun-java-sdk-dysmsapi.version>1.1.0</aliyun-java-sdk-dysmsapi.version>
+    <aliyun-java-sdk-core.version>4.4.5</aliyun-java-sdk-core.version>
+    <!--        <openfeign-core.version>2.1.3.RELEASE</openfeign-core.version>-->
+    <kaptcha.version>0.0.9</kaptcha.version>
+    <springboot.version>2.2.7.RELEASE</springboot.version>
+    <kaptcha.version>2.3.2</kaptcha.version>
+    <spring-security-oauth2.version>2.3.6.RELEASE</spring-security-oauth2.version>
+    <hutool.version>5.3.1</hutool.version>
+  </properties>
+
+  <dependencies>
+    <!--工具-->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+    <!--fastjson-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <version>${springboot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger2</artifactId>
+      <version>${springfox.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.mapstruct</groupId>
+          <artifactId>mapstruct</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>${springfox.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-bean-validators</artifactId>
+      <version>${springfox.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.xiaoymin</groupId>
+      <artifactId>knife4j-spring-boot-starter</artifactId>
+      <version>${knife4j.version}</version>
+    </dependency>
+
+    <!--Lombok-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <!--测试依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>${springboot.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!--配置文件处理器-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <version>${springboot.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <version>${springboot.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <!--kaptcha 验证码 -->
+    <dependency>
+      <groupId>com.github.penggle</groupId>
+      <artifactId>kaptcha</artifactId>
+      <version>${kaptcha.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool.version}</version>
+    </dependency>
+
+  </dependencies>
+
+</project>

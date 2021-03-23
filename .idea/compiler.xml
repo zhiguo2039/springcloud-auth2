@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="emp-api" />
+        <module name="emp-common" />
+        <module name="emp-auth2" />
+        <module name="emp-mesh-service" />
+        <module name="emp-security" />
+        <module name="emp-gateway" />
+        <module name="emp-log" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="emp-feign" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="emp-api" options="-parameters" />
+      <module name="emp-auth2" options="-parameters" />
+      <module name="emp-common" options="-parameters" />
+      <module name="emp-feign" options="-parameters" />
+      <module name="emp-gateway" options="-parameters" />
+      <module name="emp-log" options="-parameters" />
+      <module name="emp-mesh-service" options="-parameters" />
+      <module name="emp-security" options="-parameters" />
+    </option>
+  </component>
+</project>

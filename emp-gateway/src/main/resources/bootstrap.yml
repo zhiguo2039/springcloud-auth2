@@ -1,0 +1,22 @@
+server:
+  port: 9600
+  servlet:
+    context-path: /gateway
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: emp-gateway
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: localhost:8848
+        group: DEFAULT_GROUP
+        file-extension: yaml
+      discovery:
+        enabled: true
+        server-addr: localhost:8848
+        service: emp-gateway
+  profiles:
+    active: dev
