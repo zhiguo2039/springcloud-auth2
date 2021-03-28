@@ -5,10 +5,11 @@
     <file url="file://$PROJECT_DIR$/emp-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-auth2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/emp-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-mesh-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emp-mesh-service/kaptcha-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emp-mesh-service/user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/emp-security" charset="UTF-8" />
   </component>
 </project>

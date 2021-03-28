@@ -16,8 +16,8 @@ spring:
         enabled: true
         server-addr: localhost:8848
         service: emp-auth2
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

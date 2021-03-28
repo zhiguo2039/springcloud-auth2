@@ -18,5 +18,5 @@ spring:
         enabled: true
         server-addr: localhost:8848
         service: emp-gateway
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev

@@ -2,7 +2,7 @@ package com.yzg.study.api.feign.client;
 
 
 import com.yzg.study.api.feign.fallback.ApiCloudUserFallBack;
-import com.yzg.study.common.config.feign.DiyRequestInterceptorConfig;
+import com.yzg.study.api.feign.config.DiyRequestInterceptorConfig;
 import com.yzg.study.common.vo.CloudResult;
 import com.yzg.study.common.vo.CloudUserVo;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * springcloud的feign组件进行远程服务调用和内部的负载均衡
  */
 
-@FeignClient(contextId = "userClient",name = "gaoxinqimeng-user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudUserFallBack.class)
+@FeignClient(contextId = "apiCloudUserClient",name = "user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudUserFallBack.class)
 public interface ApiCloudUserClient {
 
     //调用user的远程服务

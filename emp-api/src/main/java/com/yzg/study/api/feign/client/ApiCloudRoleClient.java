@@ -2,7 +2,7 @@ package com.yzg.study.api.feign.client;
 
 import com.alibaba.fastjson.JSONObject;
 import com.yzg.study.api.feign.fallback.ApiCloudRoleFallBack;
-import com.yzg.study.common.config.feign.DiyRequestInterceptorConfig;
+import com.yzg.study.api.feign.config.DiyRequestInterceptorConfig;
 import com.yzg.study.common.vo.CloudResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * springcloud的feign组件进行远程服务调用和内部的负载均衡
  */
 
-@FeignClient(contextId = "apiCloudRoleClient",name = "gaoxinqimeng-user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudRoleFallBack.class)
+@FeignClient(contextId = "apiCloudRoleClient",name = "user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudRoleFallBack.class)
 public interface ApiCloudRoleClient {
 
     @RequestMapping("/rest/role/list")

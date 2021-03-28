@@ -17,7 +17,6 @@
   <modules>
     <module>emp-common</module>
     <module>emp-gateway</module>
-    <module>emp-gateway</module>
     <module>emp-log</module>
     <module>emp-auth2</module>
     <module>emp-security</module>

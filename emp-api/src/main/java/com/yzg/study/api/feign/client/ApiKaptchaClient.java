@@ -1,7 +1,7 @@
 package com.yzg.study.api.feign.client;
 
 import com.yzg.study.api.feign.fallback.ApiKaptchaFallback;
-import com.yzg.study.common.config.feign.DiyRequestInterceptorConfig;
+import com.yzg.study.api.feign.config.DiyRequestInterceptorConfig;
 import com.yzg.study.common.vo.CloudResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;

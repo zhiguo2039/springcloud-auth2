@@ -2,7 +2,7 @@ package com.yzg.study.api.feign.client;
 
 
 import com.yzg.study.api.feign.fallback.ApiCloudMenuFallBack;
-import com.yzg.study.common.config.feign.DiyRequestInterceptorConfig;
+import com.yzg.study.api.feign.config.DiyRequestInterceptorConfig;
 import com.yzg.study.common.entity.CloudMenu;
 import com.yzg.study.common.vo.CloudResult;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -16,7 +16,7 @@ import java.util.List;
  * springcloud的feign组件进行远程服务调用和内部的负载均衡
  */
 
-@FeignClient(contextId = "apiCloudMenuClient",name = "gaoxinqimeng-user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudMenuFallBack.class)
+@FeignClient(contextId = "apiCloudMenuClient",name = "user-service-mesh",configuration = DiyRequestInterceptorConfig.class,fallback = ApiCloudMenuFallBack.class)
 public interface ApiCloudMenuClient {
 
     @RequestMapping("/rest/menus/list")

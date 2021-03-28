@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
         <module name="emp-api" />
-        <module name="emp-mesh-service" />
+        <module name="emp-common" />
         <module name="emp-auth2" />
+        <module name="kaptcha-service" />
         <module name="emp-security" />
         <module name="emp-gateway" />
-        <module name="emp-common" />
         <module name="emp-log" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,8 @@
       <module name="emp-log" options="-parameters" />
       <module name="emp-mesh-service" options="-parameters" />
       <module name="emp-security" options="-parameters" />
+      <module name="kaptcha-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
